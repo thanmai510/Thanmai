@@ -1,0 +1,48 @@
+.clock {
+    position: relative;
+    height: 40vw;
+    width: 40vw;
+    background-size:100%;
+    margin: auto;
+    background: linear-gradient(to right, yellow, pink);
+    background-image:url("clock\ image.jpeg");
+    border-radius:50%;
+}
+
+#hour, #minutes, #seconds {
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    transform-origin: bottom center; /* Center the rotation */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for width */
+}
+
+#hour {
+    height: 25%;
+    width: 1.8%;
+    top: 25%; /* Adjust to start from the center */
+    opacity: 0.8;
+}
+
+#minutes {
+    height: 30%;
+    width: 1.6%;
+    top: 20%; /* Adjust to start from the center */
+    opacity: 0.8;
+}
+
+#seconds {
+    height: 40%;
+    width: 1%;
+    top: 10%; /* Adjust to start from the center */
+    opacity: 0.8;
+}
+
+.digital-clock {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for digital look */
+    font-size: 2em; /* Size of the digital clock */
+    margin-top: 10px; /* Space between the analog clock and digital clock */
+    color: black; /* Color of the text */
+}
